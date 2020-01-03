@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.7.4 on win32)" generated="20200103 12:49:58.491" rpa="false">
+<suite id="s1" name="Wallet Hoss" source="C:\Users\001224\eclipse-workspace\wallet_hoss">
+<suite id="s1-s1" name="Test 02" source="C:\Users\001224\eclipse-workspace\wallet_hoss\test_02.robot">
+<test id="s1-s1-t1" name="用例5-RF的变量">
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>hello,world</arg>
+</arguments>
+<assign>
+<var>${str}</var>
+</assign>
+<msg timestamp="20200103 12:49:58.849" level="INFO">${str} = hello,world</msg>
+<status status="PASS" starttime="20200103 12:49:58.848" endtime="20200103 12:49:58.849"></status>
+</kw>
+<kw name="Create List" library="BuiltIn">
+<doc>Returns a list containing given items.</doc>
+<arguments>
+<arg>a</arg>
+<arg>bb</arg>
+<arg>333</arg>
+</arguments>
+<assign>
+<var>@{list}</var>
+</assign>
+<msg timestamp="20200103 12:49:58.850" level="INFO">@{list} = [ a | bb | 333 ]</msg>
+<status status="PASS" starttime="20200103 12:49:58.849" endtime="20200103 12:49:58.850"></status>
+</kw>
+<kw name="Create Dictionary" library="BuiltIn">
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<arguments>
+<arg>key</arg>
+<arg>value</arg>
+<arg>name</arg>
+<arg>tony</arg>
+</arguments>
+<assign>
+<var>&amp;{dict}</var>
+</assign>
+<msg timestamp="20200103 12:49:58.851" level="INFO">&amp;{dict} = { key=value | name=tony }</msg>
+<status status="PASS" starttime="20200103 12:49:58.850" endtime="20200103 12:49:58.851"></status>
+</kw>
+<kw name="Create Dictionary" library="BuiltIn">
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<arguments>
+<arg>key=value</arg>
+<arg>name=tony</arg>
+</arguments>
+<assign>
+<var>&amp;{dict1}</var>
+</assign>
+<msg timestamp="20200103 12:49:58.852" level="INFO">&amp;{dict1} = { key=value | name=tony }</msg>
+<status status="PASS" starttime="20200103 12:49:58.852" endtime="20200103 12:49:58.853"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${str}</arg>
+</arguments>
+<msg timestamp="20200103 12:49:58.853" level="INFO">hello,world</msg>
+<status status="PASS" starttime="20200103 12:49:58.853" endtime="20200103 12:49:58.854"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${list}</arg>
+</arguments>
+<msg timestamp="20200103 12:49:58.855" level="INFO">['a', 'bb', '333']</msg>
+<status status="PASS" starttime="20200103 12:49:58.854" endtime="20200103 12:49:58.855"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${list[2]}</arg>
+</arguments>
+<msg timestamp="20200103 12:49:58.856" level="INFO">333</msg>
+<status status="PASS" starttime="20200103 12:49:58.855" endtime="20200103 12:49:58.856"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${dict}</arg>
+</arguments>
+<msg timestamp="20200103 12:49:58.857" level="INFO">{'key': 'value', 'name': 'tony'}</msg>
+<status status="PASS" starttime="20200103 12:49:58.857" endtime="20200103 12:49:58.857"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${dict.name}</arg>
+</arguments>
+<msg timestamp="20200103 12:49:58.858" level="INFO">tony</msg>
+<status status="PASS" starttime="20200103 12:49:58.858" endtime="20200103 12:49:58.859"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${dict1}</arg>
+</arguments>
+<msg timestamp="20200103 12:49:58.859" level="INFO">{'key': 'value', 'name': 'tony'}</msg>
+<status status="PASS" starttime="20200103 12:49:58.859" endtime="20200103 12:49:58.860"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${str_2}</arg>
+</arguments>
+<msg timestamp="20200103 12:49:58.860" level="INFO">haha</msg>
+<status status="PASS" starttime="20200103 12:49:58.860" endtime="20200103 12:49:58.861"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${list_2}</arg>
+</arguments>
+<msg timestamp="20200103 12:49:58.862" level="INFO">['3', '4', '88']</msg>
+<status status="PASS" starttime="20200103 12:49:58.861" endtime="20200103 12:49:58.862"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${dict_2}</arg>
+</arguments>
+<msg timestamp="20200103 12:49:58.863" level="INFO">{'age': '22', 'score': '100'}</msg>
+<status status="PASS" starttime="20200103 12:49:58.862" endtime="20200103 12:49:58.863"></status>
+</kw>
+<status status="PASS" starttime="20200103 12:49:58.846" endtime="20200103 12:49:58.864" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20200103 12:49:58.834" endtime="20200103 12:49:58.864"></status>
+</suite>
+<status status="PASS" starttime="20200103 12:49:58.766" endtime="20200103 12:49:58.866"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Wallet Hoss">Wallet Hoss</stat>
+<stat pass="1" fail="0" id="s1-s1" name="Test 02">Wallet Hoss.Test 02</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
